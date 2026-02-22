@@ -4,7 +4,7 @@ articles.forEach(article => {
     let menu_open = false;
   article.addEventListener('click', function() {
     if (menu_open == false) {
-        article.style.maxHeight = "10000px"
+        article.style.maxHeight = "2000px"
         menu_open = true
     } else {
         article.style.maxHeight = ""
