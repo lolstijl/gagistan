@@ -99,6 +99,9 @@ main {
 .AI {
     color: rgb(140, 140, 140);
 }
+.AI a, .article a{
+    color: #990000;
+}
 .GOLDENTAG {
     background: linear-gradient(45deg, #FFC400, #FFCA1A, #FFD64C, #FFCA1A);
     color: rgb(255, 255, 255);
