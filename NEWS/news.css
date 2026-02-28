@@ -107,6 +107,9 @@ main {
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
+.GOLDENTAGBEFORE {
+    font-weight: 700;
+}
 .BOLD {
     font-weight: 900;
 }
