@@ -16,12 +16,17 @@ h1 {
     right: 10px;
     translate: 0 0;
 }
+header, header nav {
+    background-color: #FAFAFA;
+}
 header nav ul{
     margin-top: 0;
 }
 
 /* MAIN */
-
+body {
+    background-color: #FAFAFA;
+}
 main {
     margin: 90px 20px 10px 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +34,7 @@ main {
 }
 
 .article {
+    background-color: #FAFAFA;
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 150px 1fr;
@@ -185,7 +191,6 @@ main {
     main {
         padding: 0 16vw 0 16vw;
     }
-
     .article {
         display: grid;
         grid-template-columns: 200px 1fr;
