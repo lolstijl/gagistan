@@ -10,6 +10,7 @@ articles.forEach(article => {
       //gsm formaat
       if (menu_open == false) { //expand menu
         text.style.paddingBottom = "20px"
+        article.style.transition = "1s ease grid-template-rows"
         article.style.gridTemplateRows = `150px 1fr`
         article.style.animationName = "bounceOpen"
         menu_open = true
@@ -19,13 +20,15 @@ articles.forEach(article => {
         if (textHeight >= 800) { //groot artikel
           console.log("groot artikel collpased")
           text.style.paddingBottom = ""
+          article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationName = "bounceCloseHeavy2"
+          article.style.animationName = "bounceCloseHeavy"
           menu_open = false
         }
         else if (textHeight >= 400) {
           console.log("medium artikel collpased")
           text.style.paddingBottom = ""
+          article.style.transition = ""
           article.style.gridTemplateRows = ""
           article.style.animationName = "bounceCloseMedium"
           menu_open = false
@@ -33,6 +36,7 @@ articles.forEach(article => {
         else { //klein artikel
           console.log("klein artikel collpased")
           text.style.paddingBottom = ""
+          article.style.transition = ""
           article.style.gridTemplateRows = ""
           article.style.animationName = "bounceCloseLight"
           menu_open = false
