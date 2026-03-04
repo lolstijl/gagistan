@@ -16,16 +16,25 @@ articles.forEach(article => {
       } else { //collapse menu
         let textHeight = text.offsetHeight;
         
-        if (textHeight >= 700) { //checkt of hoogte meer dan 600px
+        if (textHeight >= 800) { //groot artikel
+          console.log("groot artikel collpased")
           text.style.paddingBottom = ""
           article.style.gridTemplateRows = ""
-          article.style.animationName = "bounceCloseHeavy"
+          article.style.animationName = "bounceCloseHeavy2"
           menu_open = false
         }
-        else { //hoogte is kleiner dan 600
+        else if (textHeight >= 400) {
+          console.log("medium artikel collpased")
           text.style.paddingBottom = ""
           article.style.gridTemplateRows = ""
-          article.style.animationName = "bounceClose"
+          article.style.animationName = "bounceCloseMedium"
+          menu_open = false
+        }
+        else { //klein artikel
+          console.log("klein artikel collpased")
+          text.style.paddingBottom = ""
+          article.style.gridTemplateRows = ""
+          article.style.animationName = "bounceCloseLight"
           menu_open = false
         }
         
