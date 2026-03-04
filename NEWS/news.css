@@ -435,7 +435,7 @@ main {
         padding: 4px 1rem 0 1rem;
     }
     main {
-        padding: 0 16vw 0 16vw;
+        padding: 6rem 16vw 0 16vw;
     }
     .article {
         display: grid;

@@ -49,11 +49,13 @@ articles.forEach(article => {
       if (menu_open == false) { //expand menu
         text.style.paddingBottom = "20px"
         article.style.gridTemplateRows = `200px 1fr`
+        article.style.animationDuration = "1.8s"
         article.style.animationName = "bounceOpen"
         menu_open = true
       } else { //collapse menu
         text.style.paddingBottom = ""
         article.style.gridTemplateRows = ""
+        article.style.animationDuration = ""
         article.style.animationName = "bounceClose"
         menu_open = false
       }
