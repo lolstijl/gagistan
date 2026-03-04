@@ -118,7 +118,7 @@ main {
             scale: "";
         }
     }
-@keyframes bounceCloseHeavyOld {
+@keyframes bounceCloseHeavyOld2 {
         0% {
             scale: "";
             translate: 0% 0%;
@@ -157,7 +157,7 @@ main {
             scale: "";
         }
     }
-@keyframes bounceCloseHeavy {
+@keyframes bounceCloseHeavyOld {
         0% {
             scale: "";
             translate: 0% 0%;
@@ -192,6 +192,38 @@ main {
             scale: "";
         }
     }
+@keyframes bounceCloseHeavy {
+        0% {
+            scale: "";
+            translate: 0% 0%;
+        }
+        10% {
+            transform: scale(1, 1);
+        }
+        20% {
+            scale: 0.75;
+            transform: scale(0.4, 0.8);
+            filter: brightness(0.75);
+            translate: 0% -10%;
+            border-radius: "";
+        }
+        34% {
+            translate: 0% -50%;
+        }
+        40% {
+            scale: 1.12;
+        }
+        60% {
+            transform: scale(1, 1);
+        }
+        80% {
+            translate: 0% 1%;
+        }
+        100% {
+            transform: scale(1, 1);
+            scale: "";
+        }
+    }
 @keyframes bounceCloseMedium {
         0% {
             scale: "";
@@ -202,23 +234,22 @@ main {
         }
         20% {
             scale: 0.75;
-            transform: scale(0.8, 0.8);
+            transform: scale(0.4, 0.8);
             filter: brightness(0.75);
             translate: 0% -10%;
             border-radius: "";
         }
         34% {
-            translate: 0% -50%;
-            transform: scale(0.5, 0.6);
+            translate: 0% -30%;
         }
         40% {
-            scale: 1.08;
+            scale: 1.12;
         }
         60% {
-            transform: scale(1.1, 1.1);
+            transform: scale(1, 1);
         }
         80% {
-            translate: 0% 2%;
+            translate: 0% 1%;
         }
         100% {
             transform: scale(1, 1);
@@ -228,33 +259,32 @@ main {
 @keyframes bounceCloseLight {
         0% {
             scale: "";
-            translate: "";
+            translate: 0% 0%;
         }
         10% {
             transform: scale(1, 1);
         }
         20% {
             scale: 0.75;
-            transform: scale(0.8, 0.8);
+            transform: scale(0.4, 0.8);
             filter: brightness(0.75);
             translate: 0% -10%;
             border-radius: "";
         }
         34% {
-            translate: 0% -30%;
-            transform: scale(0.5, 0.6);
+            translate: 0% -10%;
         }
         40% {
-            scale: 1.08;
+            scale: 1.12;
         }
         60% {
-            transform: scale(1.1, 1.1);
+            transform: scale(1, 1);
         }
         80% {
-            translate: 0% 2%;
+            translate: 0% 1%;
         }
         100% {
-            transform: "";
+            transform: scale(1, 1);
             scale: "";
         }
     }
