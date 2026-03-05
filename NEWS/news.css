@@ -51,6 +51,7 @@ main {
 }
 .article.active {
     animation-name: "FadeIn";
+    animation-duration: 1s;
     opacity: 100%;
 }
 
@@ -103,7 +104,6 @@ main {
 @keyframes FadeIn {
         0% {
             opacity: 0;
-            filter: blur(10px);
             scale: 0;
             transform: scale(0.0, 0.0);
             translate: 0% 100%;
@@ -127,7 +127,6 @@ main {
             
         }
         100% {
-            filter: blur(0px);
             transform: "";
             scale: "";
             opacity: 100%;
