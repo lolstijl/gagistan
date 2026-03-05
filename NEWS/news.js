@@ -12,18 +12,18 @@ articles.forEach(article => {
         text.style.paddingBottom = "20px"
         article.style.transition = "1s ease grid-template-rows"
         article.style.gridTemplateRows = `150px 1fr`
-        article.style.animationDuration = "2s"
+        article.style.animationDuration = ""
         article.style.animationName = "JellyOpen"
         menu_open = true
       } else { //collapse menu
         let textHeight = text.offsetHeight;
         
-        if (textHeight >= 700) { //groot artikel
+        if (textHeight >= 600) { //groot artikel
           console.log("groot artikel collpased")
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationDuration = "2s"
+          article.style.animationDuration = "1.4s"
           article.style.animationName = "JellyCloseHeavy"
           menu_open = false
         }
@@ -32,7 +32,7 @@ articles.forEach(article => {
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationDuration = "2s"
+          article.style.animationDuration = "1.5s"
           article.style.animationName = "JellyCloseMedium"
           menu_open = false
         }
@@ -41,7 +41,7 @@ articles.forEach(article => {
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationDuration = "2s"
+          article.style.animationDuration = ""
           article.style.animationName = "JellyCloseLight"
           menu_open = false
         }
