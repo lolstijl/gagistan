@@ -342,6 +342,7 @@ main {
 }
 .AI {
     color: rgb(140, 140, 140);
+    line-height: 18px;
 }
 .AI a, .article a{
     color: #990000;
