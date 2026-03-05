@@ -132,7 +132,7 @@ main {
             opacity: 100%;
         }
     }
-@keyframes bounceOpen {
+@keyframes JellyOpen {
         0% {
             scale: "";
             transform: "";
@@ -155,46 +155,7 @@ main {
             scale: "";
         }
     }
-@keyframes bounceCloseHeavyOld2 {
-        0% {
-            scale: "";
-            translate: 0% 0%;
-        }
-        10% {
-            transform: scale(1, 1);
-        }
-        
-        20% {
-            scale: 0.75;
-            transform: scale(0.8, 0.8);
-            filter: brightness(0.75);
-            box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
-            translate: 0% -10%;
-            border-radius: "";
-        }
-        34% {
-            translate: 0% -90%;
-            transform: scale(0.5, 0.6);
-        }
-        40% {
-            scale: 1.08;
-            box-shadow: "";
-        }
-        50% {
-            
-        }
-        60% {
-            transform: scale(1.1, 1.1);
-        }
-        80% {
-            translate: 0% 5%;
-        }
-        100% {
-            transform: scale(1, 1);
-            scale: "";
-        }
-    }
-@keyframes bounceCloseHeavyOld {
+@keyframes FlingCloseHeavy {
         0% {
             scale: "";
             translate: 0% 0%;
@@ -229,7 +190,7 @@ main {
             scale: "";
         }
     }
-@keyframes bounceCloseHeavy {
+@keyframes JellyCloseHeavy {
         0% {
             scale: "";
             translate: 0% 0%;
@@ -261,7 +222,7 @@ main {
             scale: "";
         }
     }
-@keyframes bounceCloseMedium {
+@keyframes JellyCloseMedium {
         0% {
             scale: "";
             translate: 0% 0%;
@@ -293,7 +254,7 @@ main {
             scale: "";
         }
     }
-@keyframes bounceCloseLight {
+@keyframes JellyCloseLight {
         0% {
             scale: "";
             translate: 0% 0%;
@@ -483,13 +444,13 @@ main {
         transition: 0.5s ease all;
         margin-bottom: 40px;
         animation-name: "";
-        animation-duration: 1s;
+        animation-duration: 2s;
     }
     .article:hover {
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 30%);
         margin: 1rem 0 4rem 0;
-        translate: 0 -30px;
         transition: all 0.5s ease;
+        filter: brightness(0.98);
     }
     @keyframes hover {
         0% {
@@ -499,18 +460,107 @@ main {
             scale: 1.1;
         }
     }
-    @keyframes bounceOpen {
+    @keyframes JellyOpen {
+        0% {
+            scale: "";
+            transform: "";
+            translate: 0% 0%;
+        }        
+        20% {
+            scale: 0.95;
+            transform: scale(0.5, 0.8);
+            filter: brightness(0.75);
+        }
+        34% {
+            translate: 0 -20%;
+        }
+        40% {
+            scale: 1.08;
+            box-shadow: "";
+        }
+        100% {
+            transform: "";
+            scale: "";
+        }
+    }
+    @keyframes JellyClose {
+        0% {
+            scale: "";
+            translate: 0% 0%;
+        }
+        10% {
+            transform: scale(1, 1);
+        }
+        20% {
+            scale: 0.95;
+            transform: scale(0.4, 0.8);
+            filter: brightness(0.75);
+            translate: 0% -10%;
+            border-radius: "";
+        }
+        34% {
+            translate: 0% -30%;
+        }
+        40% {
+            scale: 1.12;
+        }
+        60% {
+            transform: scale(1, 1);
+        }
+        80% {
+            translate: 0% 1%;
+        }
+        100% {
+            transform: scale(1, 1);
+            scale: "";
+        }
+    }
+    @keyframes BounceOpen {
         0% {
             scale: "";
         }
-        20% {
+        25% {
+            scale: 0.95;
+            filter: brightness(0.9);
+        }
+        50% {
+            scale: 1.08;
+        }
+        75% {
+            scale: "";
+        }
+        100% {
+            scale: "";
+        }
+    }
+    @keyframes BounceClose {
+        0% {
+            scale: "";
+        }
+        25% {
+            scale: 0.95;
+            filter: brightness(0.9);
+        }
+        50% {
+            scale: 1.08;
+        }
+        75% {
+            scale: "";
+        }
+        100% {
+            scale: "";
+        }
+    }
+    @keyframes SpringOpen {
+        0% {
+            scale: "";
+        }
+        15% {
             scale: 0.9;
             filter: brightness(0.9);
-            box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
         }
         35% {
-            scale: 1.2;
-            box-shadow: 0px 15px 60px rgba(0, 0, 0, 20%);
+            scale: 1.12;
         }
         65% {
             scale: 0.95;
@@ -523,28 +573,26 @@ main {
             box-shadow: "";
         }
     }
-    @keyframes bounceClose {
+    @keyframes SpringClose {
         0% {
             scale: "";
         }
         20% {
-            scale: 0.9;
-            filter: brightness(0.9);
-            box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
+            scale: 0.75;
+            filter: brightness(0.75);
         }
-        35% {
-            scale: 1.2;
-            box-shadow: 0px 15px 60px rgba(0, 0, 0, 20%);
+        40% {
+            scale: 1.08;
+            box-shadow: "";
         }
-        65% {
+        60% {
             scale: 0.95;
         }
-        85% {
-            scale: 1.0;
+        80% {
+            scale: 1.01;
         }
         100% {
             scale: "";
-            box-shadow: "";
         }
     }
 

@@ -7,7 +7,6 @@ const observerCallback = (entries, observer) => {
     if (entry.isIntersecting) {
       // Add the class when it enters the screen
       entry.target.classList.add('active');
-      console.log(entry)
       
       // Optional: Stop observing after it appears once
       observer.unobserve(entry.target);

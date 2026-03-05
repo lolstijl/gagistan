@@ -12,25 +12,28 @@ articles.forEach(article => {
         text.style.paddingBottom = "20px"
         article.style.transition = "1s ease grid-template-rows"
         article.style.gridTemplateRows = `150px 1fr`
-        article.style.animationName = "bounceOpen"
+        article.style.animationDuration = "2s"
+        article.style.animationName = "JellyOpen"
         menu_open = true
       } else { //collapse menu
         let textHeight = text.offsetHeight;
         
-        if (textHeight >= 800) { //groot artikel
+        if (textHeight >= 700) { //groot artikel
           console.log("groot artikel collpased")
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationName = "bounceCloseHeavy"
+          article.style.animationDuration = "2s"
+          article.style.animationName = "JellyCloseHeavy"
           menu_open = false
         }
-        else if (textHeight >= 400) {
+        else if (textHeight >= 300) {
           console.log("medium artikel collpased")
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationName = "bounceCloseMedium"
+          article.style.animationDuration = "2s"
+          article.style.animationName = "JellyCloseMedium"
           menu_open = false
         }
         else { //klein artikel
@@ -38,7 +41,8 @@ articles.forEach(article => {
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationName = "bounceCloseLight"
+          article.style.animationDuration = "2s"
+          article.style.animationName = "JellyCloseLight"
           menu_open = false
         }
         
@@ -49,14 +53,14 @@ articles.forEach(article => {
       if (menu_open == false) { //expand menu
         text.style.paddingBottom = "20px"
         article.style.gridTemplateRows = `200px 1fr`
-        article.style.animationDuration = "1.8s"
-        article.style.animationName = "bounceOpen"
+        article.style.animationDuration = "1s"
+        article.style.animationName = "JellyOpen"
         menu_open = true
       } else { //collapse menu
         text.style.paddingBottom = ""
         article.style.gridTemplateRows = ""
-        article.style.animationDuration = ""
-        article.style.animationName = "bounceClose"
+        article.style.animationDuration = "1s"
+        article.style.animationName = "JellyClose"
         menu_open = false
       }
     }
