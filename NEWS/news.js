@@ -59,7 +59,7 @@ articles.forEach(article => {
       } else { //collapse menu
         text.style.paddingBottom = ""
         article.style.gridTemplateRows = ""
-        article.style.animationDuration = "1s"
+        article.style.animationDuration = "1.4s"
         article.style.animationName = "JellyClose"
         menu_open = false
       }
