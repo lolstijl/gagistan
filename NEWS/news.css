@@ -6,7 +6,7 @@ html {box-sizing: border-box;}
 /* HEADER */
 
 .RED {
-    background-color: #990000;
+    background-color: #D62929;
     color: #F4F4F4;
     padding: 2px 1rem 0 1rem;
 }
@@ -326,22 +326,19 @@ main {
 }
 .REPUBLIC, .PINNED, .UPDATE, .GOLDENTAG {
     padding: 2px 5px 2px 5px;
+    font-weight: 700;
 }
 .REPUBLIC {
-    background-color: #990000;
+    background-color: #D62929;
     color: #F4F4F4;
 }
 .PINNED {
     background-color: rgb(0, 0, 198);
     color: white;
-    font-size: 15px;
-    font-weight: 600;
 }
 .UPDATE {
-    background-color: #395BB1;
+    background-color: #0064EC;
     color: white;
-    font-size: 15px;
-    font-weight: 600;
 }
 .AI {
     color: rgb(140, 140, 140);
@@ -358,7 +355,7 @@ main {
     font-weight: 700;
 }
 .BOLD {
-    font-weight: 900;
+    font-weight: 700;
 }
 .GOLDENTEXT {
     background: linear-gradient(45deg, #FFC400, #FFCA1A, #FFD64C, #FFCA1A);
