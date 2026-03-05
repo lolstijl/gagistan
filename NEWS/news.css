@@ -483,12 +483,12 @@ main {
         transition: 0.5s ease all;
         margin-bottom: 40px;
         animation-name: "";
-        animation-duration: 1.2s;
+        animation-duration: 1s;
     }
     .article:hover {
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 30%);
         margin: 1rem 0 4rem 0;
-        scale: 1.15;
+        translate: 0 -30px;
         transition: all 0.5s ease;
     }
     @keyframes hover {
@@ -508,12 +508,15 @@ main {
             filter: brightness(0.9);
             box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
         }
-        40% {
+        35% {
             scale: 1.2;
             box-shadow: 0px 15px 60px rgba(0, 0, 0, 20%);
         }
-        60% {
-            scale: 1.08;
+        65% {
+            scale: 0.95;
+        }
+        85% {
+            scale: 1.0;
         }
         100% {
             scale: "";
@@ -529,12 +532,15 @@ main {
             filter: brightness(0.9);
             box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
         }
-        40% {
+        35% {
             scale: 1.2;
             box-shadow: 0px 15px 60px rgba(0, 0, 0, 20%);
         }
-        60% {
-            scale: 1.08;
+        65% {
+            scale: 0.95;
+        }
+        85% {
+            scale: 1.0;
         }
         100% {
             scale: "";
