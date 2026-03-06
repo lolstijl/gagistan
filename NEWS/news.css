@@ -47,7 +47,10 @@ main {
     height: auto;
     animation-name: "";
     animation-duration: 1s;
+    transition-delay: 0s;
     opacity: 0;
+    transform: scale(1, 1);
+    filter: brightness(1);
 }
 .article.active {
     animation-name: "FadeIn";
@@ -136,7 +139,7 @@ main {
         0% {
             scale: "";
             transform: "";
-            translate: 0% 0%;
+            translate: "";
         }        
         20% {
             scale: 0.8;
@@ -151,8 +154,10 @@ main {
             box-shadow: "";
         }
         100% {
-            transform: "";
-            scale: "";
+            scale: 1;
+            transform: scale(1, 1);
+            translate: 0 0;
+            filter: brightness(1);
         }
     }
 @keyframes FlingCloseHeavy {
@@ -193,7 +198,8 @@ main {
 @keyframes JellyCloseHeavy {
         0% {
             scale: "";
-            translate: 0% 0%;
+            transform: "";
+            translate: "";
         }
         10% {
             transform: scale(1, 1);
@@ -218,14 +224,17 @@ main {
             translate: 0% 1%;
         }
         100% {
+            scale: 1;
             transform: scale(1, 1);
-            scale: "";
+            translate: 0 0;
+            filter: brightness(1);
         }
     }
 @keyframes JellyCloseMedium {
         0% {
             scale: "";
-            translate: 0% 0%;
+            transform: "";
+            translate: "";
         }
         10% {
             transform: scale(1, 1);
@@ -250,14 +259,17 @@ main {
             translate: 0% 1%;
         }
         100% {
+            scale: 1;
             transform: scale(1, 1);
-            scale: "";
+            translate: 0 0;
+            filter: brightness(1);
         }
     }
 @keyframes JellyCloseLight {
         0% {
             scale: "";
-            translate: 0% 0%;
+            transform: "";
+            translate: "";
         }
         10% {
             transform: scale(1, 1);
@@ -282,8 +294,10 @@ main {
             translate: 0% 1%;
         }
         100% {
+            scale: 1;
             transform: scale(1, 1);
-            scale: "";
+            translate: 0 0;
+            filter: brightness(1);
         }
     }
 
@@ -439,7 +453,7 @@ main {
         grid-template-rows: 200px 0fr;
         border-radius: 20px;
         box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
-        transition: 0.5s ease all;
+        transition: 0.3s ease grid-template-rows;
         margin-bottom: 40px;
         animation-name: "";
         animation-duration: 2s;
@@ -475,8 +489,9 @@ main {
             box-shadow: "";
         }
         100% {
-            transform: "";
-            scale: "";
+            scale: 1;
+            transform: scale(1, 1);
+            translate: 0 0;
         }
     }
     @keyframes JellyClose {
@@ -507,8 +522,9 @@ main {
             translate: 0% 1%;
         }
         100% {
+            scale: 1;
             transform: scale(1, 1);
-            scale: "";
+            translate: 0 0;
         }
     }
     @keyframes BounceOpen {
