@@ -5,10 +5,6 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    translate: 0px 0px;
-}
-
 .banner {
     display: flex;
 }
