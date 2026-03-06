@@ -1,3 +1,15 @@
+@keyframes Open {
+        0% {
+            scale: "";
+        }
+        50% {
+            scale: 0.5;
+        }
+        100% {
+            scale: "";
+        }
+    }
+
 body {
     margin: 0;
 }
@@ -111,38 +123,6 @@ h1 {
     50% {top: 100%; rotate: 0deg;}
     100% {top: 100%; rotate: 0deg;}
 }
-
-@keyframes FadeIn {
-        0% {
-            opacity: 0;
-            scale: 0;
-            transform: scale(0.0, 0.0);
-            translate: 0% 100%;
-        }
-        10% {
-            opacity: 0;
-        }
-        20% {
-            scale: 0.75;
-            opacity: 20%;
-            transform: scale(0.2, 0.5);
-            
-        }
-        34% {
-            translate: 0 -30%;
-            opacity: 50%;
-        }
-        40% {
-            scale: 1.08;
-            box-shadow: "";
-            
-        }
-        100% {
-            transform: "";
-            scale: "";
-            opacity: 100%;
-        }
-    }
 
 @font-face {
     font-family: blackops;
