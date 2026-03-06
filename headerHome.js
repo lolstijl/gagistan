@@ -30,15 +30,3 @@ function menu() {
 
 console.log(burber)
 burber.addEventListener('click',  menu)
-
-//nav synchronisatie
-
-const linkHome = '<li><a href="/index.html">Home</a></li>'
-const linkNews = '<li><a href="/NEWS/news.html">Gagistan NEWS</a></li>'
-const linkFiles = '<li><a href="/locked_page/index.html">De gaga files</a></li>'
-const linkQuotes = '<li><a href="/under_construction/index.html">Quotes</a></li>'
-
-ul.insertAdjacentHTML('afterbegin', linkQuotes)
-ul.insertAdjacentHTML('afterbegin', linkFiles)
-ul.insertAdjacentHTML('afterbegin', linkNews)
-ul.insertAdjacentHTML('afterbegin', linkHome)
