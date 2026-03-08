@@ -24,7 +24,6 @@ articles.forEach(article => {
       article.style.scale = currentScale;
       article.style.translate = currentTranslate;
       article.style.transform = currentTransform;
-      article.style.transition = "3s ease all"
     }
 
     if (windowWith < 1024) {

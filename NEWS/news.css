@@ -453,14 +453,14 @@ main {
         grid-template-rows: 200px 0fr;
         border-radius: 20px;
         box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
-        transition: 0.3s ease grid-template-rows;
+        transition: 0.3s ease all;
         margin-bottom: 40px;
         animation-name: "";
-        animation-duration: 2s;
+        animation-duration: 1s;
+        filter: brightness(1);
     }
     .article:hover {
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 30%);
-        filter: brightness(0.98);
     }
     @keyframes hover {
         0% {
@@ -474,7 +474,7 @@ main {
         0% {
             scale: "";
             transform: "";
-            translate: 0% 0%;
+            translate: "";
         }        
         20% {
             scale: 0.95;
@@ -492,12 +492,14 @@ main {
             scale: 1;
             transform: scale(1, 1);
             translate: 0 0;
+            filter: brightness(1);
         }
     }
     @keyframes JellyClose {
         0% {
             scale: "";
-            translate: 0% 0%;
+            transform: "";
+            translate: "";
         }
         10% {
             transform: scale(1, 1);
@@ -525,6 +527,7 @@ main {
             scale: 1;
             transform: scale(1, 1);
             translate: 0 0;
+            filter: brightness(1);
         }
     }
     @keyframes BounceOpen {
