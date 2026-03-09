@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../header.css">
+	<link rel="stylesheet" href="gagafiles.css">
+	<script src="../hamburger.js" defer></script>
+	<title>Template-bestand</title>
+</head>
+<body>
+	<header>
+        <div class="menu">
+            <div class="lijn1"></div>
+            <div class="lijn2"></div>
+            <div class="lijn3"></div>
+        </div>
+        <h1>GAGISTAN</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/gagafiles/gagafiles.html">De gaga files</a></li>
+                <li><a href="/under_construction/index.html">Quotes</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<h2>Info</h2>
+		<div class="section">
+			<h3>Crush lijst</h3>
+			<ul class="crushes">
+				<li>Dries</li>
+				<li>Ruben</li>
+				<li>████</li>
+				<li>█████</li>
+				<li>████</li>
+				<li>█████</li>
+				<li>█████</li>
+				<li>Mathias</li>
+				<li>Anthony</li>
+				<li>██████</li>
+				<li>████</li>
+				<li>█████</li>
+				<li>███████</li>
+				<li>Mevr. Van ██████</li>
+			</ul>
+			<h3>Victims</h3>
+			<ul class="victims">
+				<li>Dries</li>
+				<li>Mathias</li>
+				<li>Anthony</li>
+				<li>████████</li>
+				<li>Mevr. Van ██████</li>
+			</ul>
+		</div>
+		<h2>Chats</h2>
+		<div class="section">
+			<ul class="chats">
+
+			</ul>
+		</div>
+		<h2>Afbeeldingen</h2>
+		<div class="section">
+		</div>
+	</main>
+</body>
+</html>

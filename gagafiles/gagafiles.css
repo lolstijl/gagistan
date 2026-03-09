@@ -4,16 +4,7 @@ html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
 /* hier komt jouw css */
-body {
-    display: flexbox;
-}
-h1 {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    margin-top: 40vh;
-    font-size: 6rem;
+main {
+    margin: 70px 20px 10px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: red;
 }

@@ -1,0 +1,20 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+.img1 {
+    background-image: url(mxstery.gif);
+    position: fixed;
+}
+
+div {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
