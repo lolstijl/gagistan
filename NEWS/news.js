@@ -104,7 +104,6 @@ articles.forEach(article => {
         animationRunning = true
 <<<<<<< HEAD
         console.log(`animationRunning=${animationRunning}`)
-=======
         console.log(animationRunning)
 >>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
 
