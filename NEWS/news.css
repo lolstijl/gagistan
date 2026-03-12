@@ -453,7 +453,6 @@ main {
         grid-template-rows: 200px 0fr;
         border-radius: 20px;
         box-shadow: 0px 5px 8px rgba(0, 0, 0, 50%);
-<<<<<<< HEAD
         transition: 0.3s ease grid-template-rows;
         margin-bottom: 40px;
         animation-name: "";
@@ -462,17 +461,15 @@ main {
     .article:hover {
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 30%);
         filter: brightness(0.98);
-=======
         transition: 0.3s ease all;
         margin-bottom: 40px;
-        animation-name: "";
         animation-duration: 1s;
         filter: brightness(1);
     }
     .article:hover {
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 30%);
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
     }
+
     @keyframes hover {
         0% {
             scale: "";
@@ -485,11 +482,8 @@ main {
         0% {
             scale: "";
             transform: "";
-<<<<<<< HEAD
             translate: 0% 0%;
-=======
             translate: "";
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
         }        
         20% {
             scale: 0.95;
@@ -507,21 +501,15 @@ main {
             scale: 1;
             transform: scale(1, 1);
             translate: 0 0;
-<<<<<<< HEAD
-=======
             filter: brightness(1);
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
         }
     }
     @keyframes JellyClose {
         0% {
             scale: "";
-<<<<<<< HEAD
             translate: 0% 0%;
-=======
             transform: "";
             translate: "";
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
         }
         10% {
             transform: scale(1, 1);
@@ -549,10 +537,7 @@ main {
             scale: 1;
             transform: scale(1, 1);
             translate: 0 0;
-<<<<<<< HEAD
-=======
             filter: brightness(1);
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
         }
     }
     @keyframes BounceOpen {

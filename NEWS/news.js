@@ -30,11 +30,8 @@ articles.forEach(article => {
       //gsm formaat
       if (menu_open == false) { //expand menu
         animationRunning = true
-<<<<<<< HEAD
         console.log(`animationRunning=${animationRunning}`)
-=======
         console.log(animationRunning)
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
         
         text.style.paddingBottom = "20px"
         article.style.transition = ""
@@ -102,10 +99,8 @@ articles.forEach(article => {
         menu_open = true
       } else { //collapse menu
         animationRunning = true
-<<<<<<< HEAD
         console.log(`animationRunning=${animationRunning}`)
         console.log(animationRunning)
->>>>>>> eb2aede4a4ac5ae37229a9313aedd446a6575954
 
         text.style.paddingBottom = ""
 
@@ -116,8 +111,6 @@ articles.forEach(article => {
         menu_open = false
       }
     }
-
-    
 
     article.addEventListener('animationend', () => {
       animationRunning = false;
