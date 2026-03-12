@@ -16,10 +16,6 @@ body {
 
 /* HEADER + NAV */
 
-h1 {
-    translate: 0px 15px;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -36,7 +32,7 @@ header {
 h1 {
     width: max-content;
     font-size: 40px;
-    translate: 0px 5px;
+    translate: 0px 10px;
     margin: 0 auto 0 auto;
     display: inline-block;
     font-family: blackops;
