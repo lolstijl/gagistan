@@ -51,7 +51,7 @@ articles.forEach(article => {
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationDuration = "1.3s"
+          article.style.animationDuration = ""
           article.style.animationName = "JellyCloseHeavy"
           menu_open = false
         }
@@ -64,7 +64,7 @@ articles.forEach(article => {
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationDuration = "1.3s"
+          article.style.animationDuration = ""
           article.style.animationName = "JellyCloseMedium"
           menu_open = false
         }
@@ -77,7 +77,7 @@ articles.forEach(article => {
           text.style.paddingBottom = ""
           article.style.transition = ""
           article.style.gridTemplateRows = ""
-          article.style.animationDuration = "1.3s"
+          article.style.animationDuration = ""
           article.style.animationName = "JellyCloseLight"
           menu_open = false
         }
