@@ -54,7 +54,7 @@ main {
 }
 .article.active {
     animation-name: "FadeIn";
-    animation-duration: 1s;
+    animation-duration: 10s;
     opacity: 100%;
 }
 
@@ -115,7 +115,7 @@ main {
             opacity: 0;
         }
         20% {
-            scale: 0.75;
+            scale: 0.075;
             opacity: 20%;
             transform: scale(0.2, 0.5);
             
@@ -125,7 +125,7 @@ main {
             opacity: 50%;
         }
         40% {
-            scale: 1.08;
+            scale: 10.08;
             box-shadow: "";
             
         }
