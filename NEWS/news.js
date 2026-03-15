@@ -36,8 +36,8 @@ articles.forEach(article => {
         text.style.paddingBottom = "20px"
         article.style.transition = ""
         article.style.gridTemplateRows = `150px 1fr`
-        article.style.animationDuration = "1.4s"
-        article.style.animationName = "bounceOpen"
+        article.style.animationDuration = "1s"
+        article.style.animationName = "JellyOpen"
         
         menu_open = true
       } else { //collapse menu
@@ -53,7 +53,7 @@ articles.forEach(article => {
           article.style.transition = ""
           article.style.gridTemplateRows = ""
           article.style.animationDuration = ""
-          article.style.animationName = "bounceClose"
+          article.style.animationName = "JellyCloseHeavy"
           menu_open = false
         }
         else if (textHeight >= 300) {
@@ -66,7 +66,7 @@ articles.forEach(article => {
           article.style.transition = ""
           article.style.gridTemplateRows = ""
           article.style.animationDuration = ""
-          article.style.animationName = "bounceClose"
+          article.style.animationName = "JellyCloseMedium"
           menu_open = false
         }
         else { //klein artikel
@@ -79,7 +79,7 @@ articles.forEach(article => {
           article.style.transition = ""
           article.style.gridTemplateRows = ""
           article.style.animationDuration = ""
-          article.style.animationName = "bounceClose"
+          article.style.animationName = "JellyCloseLight"
           menu_open = false
         }
         
