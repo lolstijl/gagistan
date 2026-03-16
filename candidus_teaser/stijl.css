@@ -100,12 +100,13 @@ main h3 {
     font-family:"baskerville";
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2);
-    border: #9E9E9E 2px solid;
+    border: #9E9E9E 0.5px solid;
     animation-name: "FadeInImg";
     animation-duration: 2s;
     animation-delay: 1s;
     opacity: 0%;
     animation-fill-mode: forwards;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 30%);
 }
 
 @media (min-width: 450px) {
