@@ -11,6 +11,8 @@ interface tekstElement {
     text: string
 }
 
+import jsonUrl from '/public/articles.json?url';
+
 // MAIN
 
 export async function startNews() {
@@ -69,7 +71,7 @@ function clearArticles() {
 
 async function getArticles(): Promise<article[]> {
     const url = await fetch(
-        "public/articles.json"
+        jsonUrl
     );
     const articles : article[] = await url.json();
     return articles;
