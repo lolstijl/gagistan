@@ -7,12 +7,10 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          // This creates a separate chunk for every single node_module
-          if (id.includes('node_modules')) {
-            return id.toString().split('node_modules/')[1].split('/')[0].toString();
-          }
-        }
+        preserveModules: true,
+        preserveModulesRoot: 'src', // Keeps the structure relative to your src folder
+        entryFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`
       }
     }
   }
