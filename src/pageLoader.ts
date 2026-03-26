@@ -30,7 +30,7 @@ export async function loadPage(curPage : string) {
     const currentScript = document.getElementById('pageScript') as HTMLScriptElement;
 
     let cssUrl : string = "src/home/home.css"
-    let scriptUrl : string = "/src/assets/empty.ts";
+    let scriptUrl : string = "/src/assets/empty.js";
     let htmlUrl : string = homeHTML;
     let startFunction = () => {
         return doNothing();
@@ -39,7 +39,7 @@ export async function loadPage(curPage : string) {
     switch (curPage) {
         case "home":
                 cssUrl = "src/home/home.css"
-                scriptUrl = "/src/assets/empty.ts";
+                scriptUrl = "/src/assets/empty.js";
                 htmlUrl = homeHTML;
                 startFunction = () => {
                     return doNothing();
@@ -48,7 +48,7 @@ export async function loadPage(curPage : string) {
         
         case "news":
                 cssUrl = "src/news/news.css";
-                scriptUrl = "/src/news/news.ts";
+                scriptUrl = "/src/news/news.js";
                 htmlUrl = newsHTML;
                 startFunction = () => {
                     return startNews();
@@ -56,7 +56,7 @@ export async function loadPage(curPage : string) {
             break;
         case "files":
             cssUrl = "src/files/files.css";
-            scriptUrl = "/src/files/files.ts";
+            scriptUrl = "/src/files/files.js";
             htmlUrl = filesHTML;
             startFunction = () => {
                 return startFiles();
