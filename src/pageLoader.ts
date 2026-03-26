@@ -7,6 +7,10 @@ import { doNothing } from './assets/empty';
 import { startNews } from './news/news';
 import { startFiles } from './files/files';
 
+import emptyScriptUrl from './assets/empty.ts?url';
+import newsScriptUrl from './news/news.ts?url';
+import filesScriptUrl from './files/files.ts?url';
+
 export let currentPage : string = "none";
 
 //DO NOT TOUCH
@@ -25,7 +29,7 @@ export async function loadPage(curPage : string) {
     const currentScript = document.getElementById('pageScript') as HTMLScriptElement;
 
     let cssUrl : string = "src/home/home.css"
-    let scriptUrl : string = "dist/src/assets/empty.js";
+    let scriptUrl : string = emptyScriptUrl;
     let htmlUrl : string = homeHTML;
     let startFunction = () => {
         return doNothing();
@@ -34,7 +38,7 @@ export async function loadPage(curPage : string) {
     switch (curPage) {
         case "home":
                 cssUrl = "src/home/home.css"
-                scriptUrl = "src/assets/empty.ts";
+                scriptUrl = emptyScriptUrl;
                 htmlUrl = homeHTML;
                 startFunction = () => {
                     return doNothing();
@@ -43,7 +47,7 @@ export async function loadPage(curPage : string) {
         
         case "news":
                 cssUrl = "src/news/news.css";
-                scriptUrl = "src/news/news.ts";
+                scriptUrl = newsScriptUrl;
                 htmlUrl = newsHTML;
                 startFunction = () => {
                     return startNews();
@@ -51,7 +55,7 @@ export async function loadPage(curPage : string) {
             break;
         case "files":
             cssUrl = "src/files/files.css";
-            scriptUrl = "src/files/files.ts";
+            scriptUrl = filesScriptUrl;
             htmlUrl = filesHTML;
             startFunction = () => {
                 return startFiles();
