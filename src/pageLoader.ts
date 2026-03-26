@@ -31,6 +31,13 @@ loadPage("home")
 //page loader function
 
 export async function loadPage(curPage : string) {
+
+    if (!currentCSS) {
+        // This will tell us if the element is actually missing or just not ready
+        console.warn("Could not find #pageCSS. Current DOM state:", document.readyState);
+        return; 
+    }
+
     let cssUrl : string = homeCSSUrl;
     let scriptUrl : string = emptyScriptUrl;
     let htmlUrl : string = homeHTML;
