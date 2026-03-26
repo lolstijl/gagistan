@@ -1,5 +1,10 @@
 import { loadPage } from '../pageLoader';
 import headerHTML from './header.html?raw';
+// import headerCSSUrl from './header.css';
+
+const head = document.querySelector("head")
+const headerStylesheet = document.createElement("link");
+head?.appendChild(headerStylesheet)
 
 const headerChunk = document.getElementById("headerChunk");
 headerChunk!.innerHTML = headerHTML;
