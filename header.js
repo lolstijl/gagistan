@@ -1,7 +1,7 @@
 //hamburger gedoe
 
 const nav = document.querySelector("nav");
-const burber = document.querySelector(".menu")
+const burber = document.querySelector(".menu");
 const lijn1 = document.querySelector(".lijn1")
 const lijn2 = document.querySelector(".lijn2")
 const lijn3 = document.querySelector(".lijn3")
