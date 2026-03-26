@@ -29,6 +29,7 @@ loadPage("home")
 
 export async function loadPage(curPage : string) {
     const currentCSS = document.getElementById('pageCSS') as HTMLLinkElement;
+    console.log(`currentCSS = ${currentCSS}`)
     const currentScript = document.getElementById('pageScript') as HTMLScriptElement;
 
     let cssUrl : string = "src/home/home.css"
