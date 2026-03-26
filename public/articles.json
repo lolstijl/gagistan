@@ -23,7 +23,12 @@
         "date": "TIMER2",
         "imageurl": "pensioenfeest.webp",
         "body": [
-            { "type": "paragraph", "text": "BOMPA POSITIEF" },
+            { "type": "paragraph", "text": "16u: bingo + tombola" },
+            { "type": "paragraph", "text": "18u: etenstijd, patatten met puree en frietjes" },
+            { "type": "paragraph", "text": "19u: afwas" },
+            { "type": "paragraph", "text": "19.30u: mediteren" },
+            { "type": "paragraph", "text": "20u: slaaptijd" },
+            { "type": "paragraph", "text": "7u: ochtendgymnastiek" },
             { "type": "subtitle", "text": "Wanneer?" },
             { "type": "paragraph", "text": "10/04/2026, 15:00 ongeveer" },
             { "type": "subtitle", "text": "Waar?" },
