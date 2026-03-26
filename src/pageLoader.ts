@@ -21,6 +21,9 @@ export let currentPage : string = "none";
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
 
+const currentCSS = document.getElementById('pageCSS') as HTMLLinkElement | null;
+const currentScript = document.getElementById('pageScript') as HTMLScriptElement | null;
+
 //MAIN
 
 loadPage("home")
@@ -28,10 +31,6 @@ loadPage("home")
 //page loader function
 
 export async function loadPage(curPage : string) {
-    const currentCSS = document.getElementById('pageCSS') as HTMLLinkElement;
-    console.log(`currentCSS = ${currentCSS}`)
-    const currentScript = document.getElementById('pageScript') as HTMLScriptElement;
-
     let cssUrl : string = "src/home/home.css"
     let scriptUrl : string = emptyScriptUrl;
     let htmlUrl : string = homeHTML;
