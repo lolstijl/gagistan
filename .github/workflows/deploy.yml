@@ -1,8 +1,8 @@
-name: Deploy TypeScript to Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Or "master" depending on your default branch
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -21,21 +21,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build TypeScript
+      - name: Build project
         run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This should point to the folder containing your index.html and .js files
-          path: '.' 
+          path: 'dist'
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy
         uses: actions/deploy-pages@v4

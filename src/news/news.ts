@@ -11,8 +11,6 @@ interface tekstElement {
     text: string
 }
 
-const AVDM : string = "Mathias";
-
 // MAIN
 
 export async function startNews() {
@@ -25,7 +23,7 @@ export async function startNews() {
     loadArticles(articles)
     collapseCheck()
 
-    searchBar!.addEventListener("input", (event: Event) => {
+    searchBar.addEventListener("input", () => {
         let query = searchBar.value;
 
         let filteredArticles = articles.filter((article) => {

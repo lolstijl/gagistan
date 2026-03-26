@@ -11,12 +11,9 @@ export let currentPage : string = "none";
 
 //DO NOT TOUCH
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-const body = document.querySelector("body");
 const HTMLChunk = document.getElementById("HTMLChunk");
 const headerScript = document.getElementById('headerScript') as HTMLScriptElement;
 headerScript.src = "/src/header/header.js";
-
-let transitionDuration : number = 1;
 
 //MAIN
 
@@ -30,7 +27,7 @@ export async function loadPage(curPage : string) {
     const currentScript = document.getElementById('pageScript') as HTMLScriptElement;
 
     let cssUrl : string = "src/home/home.css"
-    let scriptUrl : string = "/src/assets/empty.js";
+    let scriptUrl : string = "dist/src/assets/empty.js";
     let htmlUrl : string = homeHTML;
     let startFunction = () => {
         return doNothing();
@@ -39,7 +36,7 @@ export async function loadPage(curPage : string) {
     switch (curPage) {
         case "home":
                 cssUrl = "src/home/home.css"
-                scriptUrl = "/src/assets/empty.js";
+                scriptUrl = "src/assets/empty.ts";
                 htmlUrl = homeHTML;
                 startFunction = () => {
                     return doNothing();
@@ -48,7 +45,7 @@ export async function loadPage(curPage : string) {
         
         case "news":
                 cssUrl = "src/news/news.css";
-                scriptUrl = "/src/news/news.js";
+                scriptUrl = "src/news/news.ts";
                 htmlUrl = newsHTML;
                 startFunction = () => {
                     return startNews();
@@ -56,7 +53,7 @@ export async function loadPage(curPage : string) {
             break;
         case "files":
             cssUrl = "src/files/files.css";
-            scriptUrl = "/src/files/files.js";
+            scriptUrl = "src/files/files.ts";
             htmlUrl = filesHTML;
             startFunction = () => {
                 return startFiles();

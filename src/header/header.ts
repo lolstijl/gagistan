@@ -26,15 +26,15 @@ let menu_open = false;
 
 burber.addEventListener('click',  menu)
 
-aHome.addEventListener("click", (event: MouseEvent) => {
+aHome.addEventListener("click", () => {
     loadPage("home")
     menu();
 });
-aNews.addEventListener("click", (event: MouseEvent) => {
+aNews.addEventListener("click", () => {
     loadPage("news")
     menu();
 });
-aFiles.addEventListener("click", (event: MouseEvent) => {
+aFiles.addEventListener("click", () => {
     loadPage("files")
     menu();
 });
