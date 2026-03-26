@@ -11,8 +11,6 @@ interface tekstElement {
     text: string
 }
 
-import jsonUrl from '/public/articles.json?url';
-
 // MAIN
 
 export async function startNews() {
@@ -25,7 +23,7 @@ export async function startNews() {
     loadArticles(articles)
     collapseCheck()
 
-    searchBar.addEventListener("input", () => {
+    searchBar!.addEventListener("input", () => {
         let query = searchBar.value;
 
         let filteredArticles = articles.filter((article) => {
@@ -71,7 +69,7 @@ function clearArticles() {
 
 async function getArticles(): Promise<article[]> {
     const url = await fetch(
-        jsonUrl
+        "../public/articles.json"
     );
     const articles : article[] = await url.json();
     return articles;

@@ -7,44 +7,27 @@ import { doNothing } from './assets/empty';
 import { startNews } from './news/news';
 import { startFiles } from './files/files';
 
-import emptyScriptUrl from './assets/empty.ts?url';
-import newsScriptUrl from './news/news.ts?url';
-import filesScriptUrl from './files/files.ts?url';
-
-import homeCSSUrl from './home/home.css?url';
-import newsCSSUrl from './news/news.css?url'
-import filesCSSUrl from './files/files.css?url'
-
 export let currentPage : string = "none";
 
 //DO NOT TOUCH
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
-
-// const currentCSS = document.querySelector('link[rel="stylesheet"]')! as HTMLLinkElement;
-const currentScript = document.querySelector('script[type="module"]')! as HTMLScriptElement;
+const headerScript = document.getElementById('headerScript') as HTMLScriptElement;
+headerScript.src = "/src/header/header.js";
 
 //MAIN
 
 loadPage("home")
 
+
 //page loader function
 
 export async function loadPage(curPage : string) {
-    const head = document.querySelector("head")
-    const currentCSS = document.createElement("link");
-    head?.appendChild(currentCSS)
-    currentCSS.rel = "stylesheet"
-    currentCSS.href = homeCSSUrl
+    const currentCSS = document.getElementById('pageCSS') as HTMLLinkElement;
+    const currentScript = document.getElementById('pageScript') as HTMLScriptElement;
 
-    if (!currentCSS) {
-        // This will tell us if the element is actually missing or just not ready
-        console.warn("Could not find #pageCSS. Current DOM state:", document.readyState);
-        return; 
-    }
-
-    let cssUrl : string = homeCSSUrl;
-    let scriptUrl : string = emptyScriptUrl;
+    let cssUrl : string = "src/home/home.css"
+    let scriptUrl : string = "/src/assets/empty.ts";
     let htmlUrl : string = homeHTML;
     let startFunction = () => {
         return doNothing();
@@ -52,8 +35,8 @@ export async function loadPage(curPage : string) {
 
     switch (curPage) {
         case "home":
-                cssUrl = homeCSSUrl;
-                scriptUrl = emptyScriptUrl;
+                cssUrl = "src/home/home.css"
+                scriptUrl = "/src/assets/empty.ts";
                 htmlUrl = homeHTML;
                 startFunction = () => {
                     return doNothing();
@@ -61,16 +44,16 @@ export async function loadPage(curPage : string) {
             break;
         
         case "news":
-            cssUrl = newsCSSUrl;
-            scriptUrl = newsScriptUrl;
-            htmlUrl = newsHTML;
-            startFunction = () => {
-                return startNews();
-            };
+                cssUrl = "src/news/news.css";
+                scriptUrl = "/src/news/news.ts";
+                htmlUrl = newsHTML;
+                startFunction = () => {
+                    return startNews();
+                };
             break;
         case "files":
-            cssUrl = filesCSSUrl;
-            scriptUrl = filesScriptUrl;
+            cssUrl = "src/files/files.css";
+            scriptUrl = "/src/files/files.ts";
             htmlUrl = filesHTML;
             startFunction = () => {
                 return startFiles();
@@ -85,8 +68,8 @@ export async function loadPage(curPage : string) {
     if (currentPage != curPage) {
         currentPage = curPage;
 
-        HTMLChunk!.style.translate = "0% -100%";
-        HTMLChunk!.style.transition = "";
+        HTMLChunk!.style.translate = "0% -100%"
+        HTMLChunk!.style.transition = ""
 
         await delay(100);
 
