@@ -21,7 +21,7 @@ export let currentPage : string = "none";
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
 
-const currentCSS = document.querySelector('link[rel="stylesheet"]')! as HTMLLinkElement;
+// const currentCSS = document.querySelector('link[rel="stylesheet"]')! as HTMLLinkElement;
 const currentScript = document.querySelector('script[type="module"]')! as HTMLScriptElement;
 
 //MAIN
@@ -31,6 +31,11 @@ loadPage("home")
 //page loader function
 
 export async function loadPage(curPage : string) {
+    const head = document.querySelector("head")
+    const currentCSS = document.createElement("link");
+    head?.appendChild(currentCSS)
+    currentCSS.rel = "stylesheet"
+    currentCSS.href = homeCSSUrl
 
     if (!currentCSS) {
         // This will tell us if the element is actually missing or just not ready

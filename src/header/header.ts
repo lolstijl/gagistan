@@ -1,11 +1,12 @@
 import { loadPage } from '../pageLoader';
 import headerHTML from './header.html?raw';
-import headerCSSUrl from '/public/header.css';
+import headerCSSUrl from '/public/header.css?url';
 
 const head = document.querySelector("head")
 const headerStylesheet = document.createElement("link");
 head?.appendChild(headerStylesheet)
-headerStylesheet.href = "headerCSSUrl"
+headerStylesheet.rel = "stylesheet"
+headerStylesheet.href = headerCSSUrl
 
 const headerChunk = document.getElementById("headerChunk");
 headerChunk!.innerHTML = headerHTML;
