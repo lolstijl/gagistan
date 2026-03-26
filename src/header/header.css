@@ -1,0 +1,165 @@
+header {
+    position: fixed;
+    top: 0;
+    display: block;
+    transition: all 0.1s ease;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 30%);
+    z-index: 9;
+}
+
+/* HEADER DIV */
+#headerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 4px 10px 4px 10px;
+    width: 100vw;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+/* H1 */
+
+h1 {
+    display: inline-block;
+    margin: 0;
+    font-family: blackops;
+    font-weight: 300;
+    font-size: 38px;
+    translate: 0px 1px;
+}
+
+/* burger */
+
+.menu, .spacer {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 30px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: auto 0 auto 0;
+}
+
+.lijn1, .lijn2, .lijn3 {
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 6px;
+    border-radius: 100px;
+    transition: 0.5s all ease;
+    margin: 0;
+    padding: 0;
+    translate: 0% -50%;
+}
+
+.lijn1 {
+    top: 0%; 
+}
+
+.lijn2 {
+    top: 50%;
+}
+
+.lijn3 {
+    top: 100%;
+}
+
+/* nav */
+
+header nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    min-height: 0px;
+    transition: 0.2s ease all;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 1rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 0px;
+    transition: 0.3s all ease;
+    translate: -80px 0px;
+    opacity: 0;
+    z-index: 0;
+}
+
+header nav ul li {
+    margin: 0 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    list-style: none;
+    transition: 0.5s all ease;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all ease;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* DESKTOP FORMAT */
+
+@media (min-width: 1025px) {
+    header {
+        backdrop-filter: blur(45px);
+        -webkit-backdrop-filter: blur(45px);
+    }
+    header nav ul li:hover {
+        scale: 1.1;
+        translate: 70px 0;
+    }
+}
+
+/* ANIMATIONS */
+
+@keyframes collapse1 {
+    0% {top: 0%; rotate: 0deg;}
+    25% {top: 50%; rotate: 0deg;}
+    50% {top: 50%; rotate: 45deg;}
+    100% {top: 50%; rotate: 45deg;}
+}
+@keyframes collapse2 {
+    0% {top: 50%; rotate: 0deg;}
+    25% {top: 50%; rotate: 0deg;}
+    50% {top: 50%; rotate: 45deg;}
+    75% {top: 50%; rotate: 45deg;}
+    100% {top: 50%; rotate: 45deg;}
+}
+@keyframes collapse3 {
+    0% {top: 100%; rotate: 0deg;}
+    25% {top: 50%; rotate: 0deg;}
+    50% {top: 50%; rotate: -45deg;}
+    75% {top: 50%; rotate: -45deg;}
+    100% {top: 50%; rotate: -45deg;}
+}
+
+@keyframes expand1 {
+    0% {top: 50%; rotate: 45deg;}
+    25% {top: 50%; rotate: 0deg;}
+    50% {top: 0%; rotate: 0deg;}
+    100% {top: 0%; rotate: 0deg;}
+}
+@keyframes expand2 {
+    0% {top: 50%; rotate: 45deg;}
+    25% {top: 50%; rotate: 0deg;}
+    50% {top: 50%; rotate: 0deg;}
+    100% {top: 50%; rotate: 0deg;}
+}
+@keyframes expand3 {
+    0% {top: 50%; rotate: -45deg;}
+    25% {top: 50%; rotate: 0deg;}
+    50% {top: 100%; rotate: 0deg;}
+    100% {top: 100%; rotate: 0deg;}
+}
