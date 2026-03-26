@@ -11,6 +11,10 @@ import emptyScriptUrl from './assets/empty.ts?url';
 import newsScriptUrl from './news/news.ts?url';
 import filesScriptUrl from './files/files.ts?url';
 
+import homeCSSUrl from './src/home/home.css?url'
+import newsCSSUrl from './src/news/news.css?url'
+import filesCSSUrl from './src/files/files.css?url'
+
 export let currentPage : string = "none";
 
 //DO NOT TOUCH
@@ -20,7 +24,6 @@ const HTMLChunk = document.getElementById("HTMLChunk");
 //MAIN
 
 loadPage("home")
-
 
 //page loader function
 
@@ -37,7 +40,7 @@ export async function loadPage(curPage : string) {
 
     switch (curPage) {
         case "home":
-                cssUrl = "src/home/home.css"
+                cssUrl = homeCSSUrl;
                 scriptUrl = emptyScriptUrl;
                 htmlUrl = homeHTML;
                 startFunction = () => {
@@ -46,15 +49,15 @@ export async function loadPage(curPage : string) {
             break;
         
         case "news":
-                cssUrl = "src/news/news.css";
-                scriptUrl = newsScriptUrl;
-                htmlUrl = newsHTML;
-                startFunction = () => {
-                    return startNews();
-                };
+            cssUrl = newsCSSUrl;
+            scriptUrl = newsScriptUrl;
+            htmlUrl = newsHTML;
+            startFunction = () => {
+                return startNews();
+            };
             break;
         case "files":
-            cssUrl = "src/files/files.css";
+            cssUrl = filesCSSUrl;
             scriptUrl = filesScriptUrl;
             htmlUrl = filesHTML;
             startFunction = () => {

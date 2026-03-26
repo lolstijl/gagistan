@@ -69,7 +69,7 @@ function clearArticles() {
 
 async function getArticles(): Promise<article[]> {
     const url = await fetch(
-        "../public/articles.json"
+        "public/articles.json"
     );
     const articles : article[] = await url.json();
     return articles;
