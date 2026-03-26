@@ -31,7 +31,7 @@ loadPage("home")
 //page loader function
 
 export async function loadPage(curPage : string) {
-    let cssUrl : string = "src/home/home.css"
+    let cssUrl : string = homeCSSUrl;
     let scriptUrl : string = emptyScriptUrl;
     let htmlUrl : string = homeHTML;
     let startFunction = () => {
