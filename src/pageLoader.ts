@@ -21,8 +21,8 @@ export let currentPage : string = "none";
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
 
-const currentCSS = document.getElementById('pageCSS')! as HTMLLinkElement;
-const currentScript = document.getElementById('pageScript')! as HTMLScriptElement;
+const currentCSS = document.querySelector('link[rel="stylesheet"]')! as HTMLLinkElement;
+const currentScript = document.querySelector('script[type="module"]')! as HTMLScriptElement;
 
 //MAIN
 
