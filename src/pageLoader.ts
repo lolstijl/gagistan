@@ -12,8 +12,6 @@ export let currentPage : string = "none";
 //DO NOT TOUCH
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
-const headerScript = document.getElementById('headerScript') as HTMLScriptElement;
-headerScript.src = "./src/header/header.js";
 
 //MAIN
 
