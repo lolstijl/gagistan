@@ -11,7 +11,7 @@ import emptyScriptUrl from './assets/empty.ts?url';
 import newsScriptUrl from './news/news.ts?url';
 import filesScriptUrl from './files/files.ts?url';
 
-import homeCSSUrl from './src/home/home.css?url'
+import homeCSSUrl from './src/home/home.css?url';
 import newsCSSUrl from './src/news/news.css?url'
 import filesCSSUrl from './src/files/files.css?url'
 
