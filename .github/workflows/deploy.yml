@@ -1,8 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy Vite to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"] # Updated to match your branch name
+  workflow_dispatch:      # Allows you to trigger it manually for testing
 
 permissions:
   contents: read
@@ -30,7 +31,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          # IMPORTANT: Vite puts everything in 'dist'
+          path: 'dist' 
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
