@@ -71,8 +71,8 @@ export async function loadPage(curPage : string) {
     if (currentPage != curPage) {
         currentPage = curPage;
 
-        HTMLChunk!.style.translate = "0% -100%"
-        HTMLChunk!.style.transition = ""
+        HTMLChunk!.style.translate = "0% -100%";
+        HTMLChunk!.style.transition = "";
 
         await delay(100);
 
