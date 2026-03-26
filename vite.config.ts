@@ -5,5 +5,15 @@ export default defineConfig({
   base: '/gagistan/',
   build: {
     cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // This creates a separate chunk for every single node_module
+          if (id.includes('node_modules')) {
+            return id.toString().split('node_modules/')[1].split('/')[0].toString();
+          }
+        }
+      }
+    }
   }
 });
