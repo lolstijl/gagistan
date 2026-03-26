@@ -21,8 +21,8 @@ export let currentPage : string = "none";
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
 
-const currentCSS = document.getElementById('pageCSS') as HTMLLinkElement | null;
-const currentScript = document.getElementById('pageScript') as HTMLScriptElement | null;
+const currentCSS = document.getElementById('pageCSS')! as HTMLLinkElement;
+const currentScript = document.getElementById('pageScript')! as HTMLScriptElement;
 
 //MAIN
 
