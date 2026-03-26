@@ -13,7 +13,7 @@ export let currentPage : string = "none";
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const HTMLChunk = document.getElementById("HTMLChunk");
 const headerScript = document.getElementById('headerScript') as HTMLScriptElement;
-headerScript.src = "/src/header/header.js";
+headerScript.src = "dist/src/header/header.js";
 
 //MAIN
 
