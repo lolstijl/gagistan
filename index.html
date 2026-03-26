@@ -1,22 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/assets/favico.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./img/favico.ico">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./header.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FFFFFF">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="./src/header/header.css">
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/news/news.css" id="pageCSS">
-    <script type="module" src="/src/pageLoader.ts" defer></script>
-    <script type="module" src="/src/env.d.ts" defer></script>
-    <script type="module" src="/src/header/header.ts" id="headerScript" defer></script>
-    <script type="module" src="/src/assets/empty.ts" id="pageScript" defer></script>
-    <title>Gagistan</title>
-  </head>
-  <div id="headerChunk"></div>
-  <body>
-    <div id="HTMLChunk"></div>
-  </body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>GAGISTAN</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="lijn1"></div>
+            <div class="lijn2"></div>
+            <div class="lijn3"></div>
+        </div>
+        <h1>GAGISTAN</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./NEWS/news.html">Gagistan NEWS</a></li>
+                <li><a href="./gagafiles/index.html">De gaga files</a></li>
+                <li><a href="./candidus_teaser/index.html">???</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="beschrijving">
+                <h3>Eindelijk communist</h3>
+                <p>Onze mooie en vrije republiek groeit met het machtige communistische regime. En het groeiende antisemitisme tegen goblin "jarne"</p>
+            </div>
+        </div>
+
+        <ul class="cards">
+            <li>
+                <div class="img"></div>
+                <h4>Wetten van Gagistan:</h4>
+                <ol>
+                    <li>
+                        1. Geen enkele vorm van anti-propaganda tegen het regime is toegestaan.
+                    </li>
+                    <li>
+                        2. Wie overmatig yapt zal gestraft worden.
+                    </li>
+                    <li>
+                        3. Alle pogingen tot revoluties zijn ten strengste verboden.
+                    </li>
+                    <li>
+                        4. Elke burger die zich aan de regels houd zal recht hebben om te leven.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <div class="img" onclick="window.location.href = './NEWS/news.html'"></div>
+                <h4>GAGISTAN NEWS</h4>
+                <p>Lees de nieuwste kanker artikelen van de meest mentaal gehandicapte auteurs die je gaat tegenkomen!
+            </li>
+            <li>
+                <div class="img" onclick="window.location.href = './gagafiles/index.html'"></div>
+                <h4>Ontdek de Gaga Files!</h4>
+                <p>Ontdek gagik zijn diepste en donkerste geheimen!</p>
+            </li>
+            <!--
+            <li>
+                <div class="img" onclick="window.location.href = './under_construction/index.html'"></div>
+                <h4>Quotes</h4>
+                <p>Krijg oogkanker van deze out-of-context quotes die mogelijk in een rechtzaak bovengehaald zullen worden.<br>Work In Progress</p>
+            </li>
+            -->
+        </ul>
+    </main>
+</body>
 </html>
