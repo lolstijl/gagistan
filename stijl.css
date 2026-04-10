@@ -4,17 +4,8 @@ html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
 /* hier komt jouw css */
-
-.img1 {
-    background-image: url(mxstery.gif);
-    position: fixed;
-}
-
-div {
-    position: fixed;
+h1 {
+    text-align: center;
     width: 100vw;
-    height: 100vh;
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: 50%;
+    font-size: 100px;
 }
